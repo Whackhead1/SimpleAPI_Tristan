@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace SimpleAPI_Project.Controllers
 {
@@ -14,6 +10,5 @@ namespace SimpleAPI_Project.Controllers
 
             return View();
         }
-        //I kept this + the "Help" page since its a nice little 'openapi / swagger' page to use
     }
 }

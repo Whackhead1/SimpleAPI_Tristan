@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
-namespace SimpleAPI_Project.Models
+﻿namespace SimpleAPI_Project.Models
 {
     public class Skill
     {

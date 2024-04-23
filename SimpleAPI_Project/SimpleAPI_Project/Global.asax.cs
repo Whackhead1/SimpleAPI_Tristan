@@ -1,4 +1,5 @@
-﻿using SimpleAPI_Project.Controllers;
+﻿using Serilog;
+using SimpleAPI_Project.Controllers;
 using SimpleAPI_Project.Data;
 using SimpleAPI_Project.Data.Repository;
 using System;
@@ -19,13 +20,16 @@ namespace SimpleAPI_Project
     {
         protected void Application_Start()
         {
+            Log.Logger = new LoggerConfiguration().WriteTo.Console().CreateLogger(); //Serilog configuration
+
             AreaRegistration.RegisterAllAreas();
-            UnityConfig.RegisterComponents();
+            UnityConfig.RegisterComponents(); //dependency injection
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
+            //dont use XML responses, use JSON
             GlobalConfiguration.Configuration.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
             GlobalConfiguration.Configuration.Formatters.Remove(GlobalConfiguration.Configuration.Formatters.XmlFormatter);
         }
