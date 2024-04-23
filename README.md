@@ -21,7 +21,7 @@ If you wish to view the schema/data in your browser, you can use Adminer:
 4. Enter your login details.
 
 
-### Running EF6 Migrations
+## Running EF6 Migrations
 
 1. Navigate to `View -> Other Windows -> Package Manager Console` in Visual Studio.
 2. Execute the `update-database` command in the Package Manager Console.
@@ -51,4 +51,5 @@ Here's an example of testing an Update request with a JSON body to `http://local
   {
     "Id": 4,
     "Name": "TestNameHere"
-  }g
+  }
+  ```
