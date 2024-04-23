@@ -120,3 +120,7 @@ C:\Programming\SimpleAPI\SimpleAPI_Project\SimpleAPI_Project\bin\Unity.Mvc5.dll
 C:\Programming\SimpleAPI\SimpleAPI_Project\SimpleAPI_Project\bin\Unity.Abstractions.pdb
 C:\Programming\SimpleAPI\SimpleAPI_Project\SimpleAPI_Project\bin\Unity.Container.pdb
 C:\Programming\SimpleAPI\SimpleAPI_Project\SimpleAPI_Project\bin\Unity.WebApi.dll
+C:\Programming\SimpleAPI\SimpleAPI_Project\SimpleAPI_Project\bin\Serilog.dll
+C:\Programming\SimpleAPI\SimpleAPI_Project\SimpleAPI_Project\bin\Serilog.Sinks.Console.dll
+C:\Programming\SimpleAPI\SimpleAPI_Project\SimpleAPI_Project\bin\Serilog.xml
+C:\Programming\SimpleAPI\SimpleAPI_Project\SimpleAPI_Project\bin\Serilog.Sinks.Console.xml

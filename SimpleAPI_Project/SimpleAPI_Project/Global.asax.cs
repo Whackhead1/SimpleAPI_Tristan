@@ -22,12 +22,9 @@ namespace SimpleAPI_Project
         {
             Log.Logger = new LoggerConfiguration().WriteTo.Console().CreateLogger(); //Serilog configuration
 
-            AreaRegistration.RegisterAllAreas();
             UnityConfig.RegisterComponents(); //dependency injection
             GlobalConfiguration.Configure(WebApiConfig.Register);
-            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             //dont use XML responses, use JSON
             GlobalConfiguration.Configuration.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
